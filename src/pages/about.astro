@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='About'>
+  <main>
+    About page
+  </main>
+  <button id="fetch-button">Fetch Data</button>
+</Layout>
+
+<script>
+import { fetchStuff } from 'astro:actions/client'
+
+const fetchButton = document.getElementById('fetch-button');
+fetchButton?.addEventListener('click', async () => {
+  const stuff = await fetchStuff();
+  console.debug(stuff);
+})
+</script>
+
