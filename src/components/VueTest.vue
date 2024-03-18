@@ -12,7 +12,7 @@ import { trpc } from "../trpc/client";
 const data = ref({});
 
 async function doFetchStuff() {
-  const result = await trpc.fetchStuff.query();
+  const result = await trpc.getUsers.query();
   data.value = result;
 }
 </script>

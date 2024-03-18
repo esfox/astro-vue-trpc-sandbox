@@ -12,14 +12,18 @@
   "dependencies": {
     "@astrojs/check": "^0.5.9",
     "@astrojs/vue": "^4.0.9",
+    "@libsql/client": "^0.5.6",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
     "astro": "^4.5.3",
+    "drizzle-orm": "^0.30.2",
     "primevue": "^3.50.0",
     "typescript": "^5.4.2",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.20.14",
     "prettier": "^3.2.5"
   }
 }
